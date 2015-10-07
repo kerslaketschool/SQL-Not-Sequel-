@@ -20,8 +20,10 @@ class AppWindow(QMainWindow):
         self.setWindowTitle("Teacher Database Thing - also Ben Sucks") # set window title
 
         #toolbars
-        self.name_textbox = QLineEdit("Name")
-        self.id_textbox = QLineEdit("ID")
+        self.name_textbox = QLineEdit()
+        self.id_textbox = QLineEdit()
+        self.name_textbox.setPlaceholderText("Name")
+        self.id_textbox.setPlaceholderText("ID")
         self.add_database_push_button = QPushButton("Add")
         self.delete_database_push_button = QPushButton("Delele")
         
